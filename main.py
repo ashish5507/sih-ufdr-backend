@@ -45,7 +45,7 @@ app = FastAPI(lifespan=lifespan)
 # --- Add CORS Middleware ---
 origins = [
     "http://localhost:3000",
-    # Remember to add your Vercel URL here when you deploy
+    "https://sih-ufdr-frontend-jqji-qfyj186hv-ashishs-projects-5ee0cda8.vercel.app"
 ]
 app.add_middleware(
     CORSMiddleware,
