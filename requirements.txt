@@ -1,0 +1,24 @@
+# requirements.txt for Railway Backend
+
+# Web server
+fastapi
+uvicorn
+
+# Data Parsing
+beautifulsoup4
+lxml
+
+# Retrieval (AI Part 1)
+sentence-transformers
+faiss-cpu
+numpy
+
+# Client for calling the LLM
+gradio_client
+
+# Pin the transformers version to avoid conflicts
+# sentence-transformers depends on this
+transformers==4.42.4
+
+python-multipart
+torch
