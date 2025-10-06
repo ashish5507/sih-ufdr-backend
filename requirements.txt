@@ -1,24 +1,25 @@
-# requirements.txt for Railway Backend
+# requirements.txt (Final CPU-Only Version)
 
-# Web server
+# Tell pip to look for CPU-only versions of PyTorch here
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Web Server & API
 fastapi
 uvicorn
+python-multipart
 
 # Data Parsing
 beautifulsoup4
 lxml
 
-# Retrieval (AI Part 1)
+# AI / Retrieval Engine
 sentence-transformers
 faiss-cpu
 numpy
+torch
 
-# Client for calling the LLM
+# Client for Calling the LLM
 gradio_client
 
-# Pin the transformers version to avoid conflicts
-# sentence-transformers depends on this
+# Pinned version for stability
 transformers==4.42.4
-
-python-multipart
-torch
