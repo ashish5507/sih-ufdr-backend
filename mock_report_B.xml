@@ -1,0 +1,23 @@
+<forensic_export version="2.0">
+    <sms_messages>
+        <sms>
+            <direction>incoming</direction>
+            <sender>+15551234567</sender>
+            <timestamp>2025-01-15T10:00:00Z</timestamp>
+            <body>The deal is confirmed. Wire the funds to the usual crypto account.</body>
+        </sms>
+        <sms>
+            <direction>outgoing</direction>
+            <recipient>+15551234567</recipient>
+            <timestamp>2025-01-15T10:05:12Z</timestamp>
+            <body>Understood. Sending now.</body>
+        </sms>
+    </sms_messages>
+    <call_history>
+        <call_record>
+            <type>Missed</type>
+            <number>+442079460958</number>
+            <date>2025-01-16T14:30:00Z</date>
+        </call_record>
+    </call_history>
+</forensic_export>

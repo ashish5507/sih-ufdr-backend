@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report case="Case #734">
+    <Chats>
+        <Message type="SMS">
+            <TimeStamp>2024-10-21 09:30:15</TimeStamp>
+            <Parties>
+                <Party role="From">Alice</Party>
+                <Party role="To">Bob</Party>
+            </Parties>
+            <Body>Hey, did you get the package? It contains the crypto wallet seed phrase.</Body>
+        </Message>
+        <Message type="SMS">
+            <TimeStamp>2024-10-21 09:31:02</TimeStamp>
+            <Parties>
+                <Party role="From">Bob</Party>
+                <Party role="To">Alice</Party>
+            </Parties>
+            <Body>Yes, received. The address is 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa. Don't share it.</Body>
+        </Message>
+    </Chats>
+    <Calls>
+        <Call>
+            <TimeStamp>2024-10-22 11:15:45</TimeStamp>
+            <Direction>Outgoing</Direction>
+            <Parties>
+                <Party role="From">Device Owner</Party>
+                <Party role="To">+442079460958</Party>
+            </Parties>
+            <Duration>120</Duration>
+        </Call>
+        <Call>
+            <TimeStamp>2024-10-22 18:30:00</TimeStamp>
+            <Direction>Incoming</Direction>
+            <Parties>
+                <Party role="From">John Doe</Party>
+                <Party role="To">Device Owner</Party>
+            </Parties>
+            <Duration>350</Duration>
+        </Call>
+    </Calls>
+    <Contacts>
+        <Contact>
+            <Name>John Doe</Name>
+            <Phone>+1-202-555-0182</Phone>
+        </Contact>
+        <Contact>
+            <Name>The Fixer</Name>
+            <Phone>+442079460958</Phone>
+        </Contact>
+    </Contacts>
+</Report>
