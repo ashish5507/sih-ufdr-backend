@@ -19,7 +19,7 @@ numpy
 torch
 
 # Client for Calling the LLM
-gradio_client
+httpx
 
 # Pinned version for stability
 transformers==4.42.4
