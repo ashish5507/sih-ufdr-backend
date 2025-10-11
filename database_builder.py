@@ -2,15 +2,11 @@
 import sqlite3
 import numpy as np
 import faiss
-from sentence_transformers import SentenceTransformer
 import json
 import os
 
 # The function now accepts 'model' as a second argument
 def build_database(parsed_data, model):
-    """
-    Builds a FAISS index and a SQLite database from the parsed UFDR data.
-    """
     print("Step 1: Preparing text data for embedding...")
     texts_to_embed = []
     for item in parsed_data:
@@ -25,8 +21,7 @@ def build_database(parsed_data, model):
         texts_to_embed.append(text)
     
     print("Step 2: Generating vector embeddings...")
-    # This line is removed: model = SentenceTransformer(...)
-    # We now use the model that was passed into the function.
+    # We now use the model that was passed into the function to save memory.
     embeddings = model.encode(texts_to_embed, show_progress_bar=True)
     print(f"Generated {len(embeddings)} vectors.")
 
