@@ -81,6 +81,12 @@ async def query_index(request: QueryRequest): # Changed to async
             response = await client.post(LLM_API_URL, json={"data": [prompt]})
             response.raise_for_status()
             llm_response = response.json()
+
+            # ---- ADDED DEBUG LINES ----
+            print("----- RAW LLM RESPONSE -----")
+            print(llm_response)
+            print("--------------------------")
+            
             final_answer = llm_response['data'][0]
             
         return {"answer": final_answer}
