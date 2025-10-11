@@ -30,7 +30,7 @@ app = FastAPI(lifespan=lifespan)
 
 origins = [
     "http://localhost:3000",
-    "https://sih-ufdr-frontend-g650xgtjl-ashishs-projects-5ee0cda8.vercel.app"
+    "https://sih-ufdr-frontend-hrpw4tec8-ashishs-projects-5ee0cda8.vercel.app"
 ]
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
