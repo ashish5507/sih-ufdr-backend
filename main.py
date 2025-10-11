@@ -17,7 +17,7 @@ class QueryRequest(BaseModel):
     question: str
 
 ml_models = {}
-LLM_API_URL = "https://ashish5077-ufdr-slm-server.hf.space/api/predict/"
+LLM_API_URL = "https://ashish5077-ufdr-slm-server.hf.space/gradio_api/call/predict"
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
